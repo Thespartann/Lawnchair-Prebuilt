@@ -1,5 +1,19 @@
-# Lawnchair-Prebuilt
+## Lawnchair-Prebuilt
 
-Clone it in packages/apps/ or in /vendor/xxx/prebuilt/app/
-Then add the package to build/target/product/core.mk or /vendor/xxx/config/common.mk or /vendor/xxx/config/packages.mk like shown in this commit: https://github.com/Ungoogled-Lineage/android_vendor_ungoogled/commit/c27baba412542f96606b8cb3e2d13ce0bb0d7777
-Kthxby
+**This repo is a template for adding a prebuilt apk to a Rom.**
+
+**Guide**
+
+Clone this anywhere you want. For example you can clone it into 
+`rom/packages/apps` or `vendor/rom/prebuilt/app`
+
+After that you need to tell the Rom to add the package like show in the 
+commit:
+
+* https://github.com/LineageOMS/android_vendor_cm/commit/218eed7ae28e1185bf922af710f2b944b6241bc4
+
+__(Some Roms add their packages in packages.mk instead of common.mk, for 
+example AOSiP)__
+
+That's mostly it. The package could also be added to 
+`build/target/product/core.mk` 
